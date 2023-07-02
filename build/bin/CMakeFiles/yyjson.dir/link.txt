@@ -1,0 +1,2 @@
+C:/Windows/w64devkit/bin/ar.exe qc libyyjson.a CMakeFiles/yyjson.dir/yyjson.c.obj
+C:/Windows/w64devkit/bin/ranlib.exe libyyjson.a
