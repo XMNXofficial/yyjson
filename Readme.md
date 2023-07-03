@@ -73,3 +73,16 @@ int main()
     return 0;
 }
 ```
+
+## 如何读入数据并且修改?
+### 方法:先不可变读入,然后使用copy函数创建可变json
+```cpp
+    //不可变转为可变
+    char* str=R"({"userName":"test"})";
+    yyjson_doc* temp=yyjson_read(str,strlen(str),0);
+    yyjson_mut_doc* temp_mut= yyjson_doc_mut_copy(temp,nullptr);
+
+    yyjson_mut_val* temp_mut_root=yyjson_mut_doc_get_root(temp_mut);
+    yyjson_mut_obj_add(temp_mut_root,yyjson_mut_str(temp_mut,"你好"),yyjson_mut_str(temp_mut,"世界"));
+    cout<<yyjson_mut_write(temp_mut,0,0);
+```

@@ -31,5 +31,15 @@ int main()
     yyjson_val* imut_obj=yyjson_obj_get(imut_root,"userName");
     // cout<<"读取userName:"<<yyjson_get_str(imut_obj)<<endl;
     yyjson_doc_free(imut_doc);
+
+
+    //不可变转为可变
+    char* str=R"({"userName":"test"})";
+    yyjson_doc* temp=yyjson_read(str,strlen(str),0);
+    yyjson_mut_doc* temp_mut= yyjson_doc_mut_copy(temp,nullptr);
+
+    yyjson_mut_val* temp_mut_root=yyjson_mut_doc_get_root(temp_mut);
+    yyjson_mut_obj_add(temp_mut_root,yyjson_mut_str(temp_mut,"你好"),yyjson_mut_str(temp_mut,"世界"));
+    cout<<yyjson_mut_write(temp_mut,0,0);
     return 0;
 }
