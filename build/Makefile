@@ -195,6 +195,58 @@ StateEdit/fast:
 .PHONY : StateEdit/fast
 
 #=============================================================================
+# Target rules for targets named example5
+
+# Build rule for target.
+example5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example5
+.PHONY : example5
+
+# fast build rule for target.
+example5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example5.dir/build.make CMakeFiles/example5.dir/build
+.PHONY : example5/fast
+
+#=============================================================================
+# Target rules for targets named example6
+
+# Build rule for target.
+example6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example6
+.PHONY : example6
+
+# fast build rule for target.
+example6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example6.dir/build.make CMakeFiles/example6.dir/build
+.PHONY : example6/fast
+
+#=============================================================================
+# Target rules for targets named debug
+
+# Build rule for target.
+debug: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 debug
+.PHONY : debug
+
+# fast build rule for target.
+debug/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug.dir/build.make CMakeFiles/debug.dir/build
+.PHONY : debug/fast
+
+#=============================================================================
+# Target rules for targets named debug2
+
+# Build rule for target.
+debug2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 debug2
+.PHONY : debug2
+
+# fast build rule for target.
+debug2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug2.dir/build.make CMakeFiles/debug2.dir/build
+.PHONY : debug2/fast
+
+#=============================================================================
 # Target rules for targets named yyjson
 
 # Build rule for target.
@@ -230,6 +282,54 @@ StateEdit.s: StateEdit.cpp.s
 StateEdit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StateEdit.dir/build.make CMakeFiles/StateEdit.dir/StateEdit.cpp.s
 .PHONY : StateEdit.cpp.s
+
+debug.obj: debug.cpp.obj
+.PHONY : debug.obj
+
+# target to build an object file
+debug.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug.dir/build.make CMakeFiles/debug.dir/debug.cpp.obj
+.PHONY : debug.cpp.obj
+
+debug.i: debug.cpp.i
+.PHONY : debug.i
+
+# target to preprocess a source file
+debug.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug.dir/build.make CMakeFiles/debug.dir/debug.cpp.i
+.PHONY : debug.cpp.i
+
+debug.s: debug.cpp.s
+.PHONY : debug.s
+
+# target to generate assembly for a file
+debug.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug.dir/build.make CMakeFiles/debug.dir/debug.cpp.s
+.PHONY : debug.cpp.s
+
+debug2.obj: debug2.cpp.obj
+.PHONY : debug2.obj
+
+# target to build an object file
+debug2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug2.dir/build.make CMakeFiles/debug2.dir/debug2.cpp.obj
+.PHONY : debug2.cpp.obj
+
+debug2.i: debug2.cpp.i
+.PHONY : debug2.i
+
+# target to preprocess a source file
+debug2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug2.dir/build.make CMakeFiles/debug2.dir/debug2.cpp.i
+.PHONY : debug2.cpp.i
+
+debug2.s: debug2.cpp.s
+.PHONY : debug2.s
+
+# target to generate assembly for a file
+debug2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug2.dir/build.make CMakeFiles/debug2.dir/debug2.cpp.s
+.PHONY : debug2.cpp.s
 
 example1.obj: example1.cpp.obj
 .PHONY : example1.obj
@@ -327,6 +427,54 @@ example4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/example4.dir/build.make CMakeFiles/example4.dir/example4.cpp.s
 .PHONY : example4.cpp.s
 
+example5.obj: example5.cpp.obj
+.PHONY : example5.obj
+
+# target to build an object file
+example5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example5.dir/build.make CMakeFiles/example5.dir/example5.cpp.obj
+.PHONY : example5.cpp.obj
+
+example5.i: example5.cpp.i
+.PHONY : example5.i
+
+# target to preprocess a source file
+example5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example5.dir/build.make CMakeFiles/example5.dir/example5.cpp.i
+.PHONY : example5.cpp.i
+
+example5.s: example5.cpp.s
+.PHONY : example5.s
+
+# target to generate assembly for a file
+example5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example5.dir/build.make CMakeFiles/example5.dir/example5.cpp.s
+.PHONY : example5.cpp.s
+
+example6.obj: example6.cpp.obj
+.PHONY : example6.obj
+
+# target to build an object file
+example6.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example6.dir/build.make CMakeFiles/example6.dir/example6.cpp.obj
+.PHONY : example6.cpp.obj
+
+example6.i: example6.cpp.i
+.PHONY : example6.i
+
+# target to preprocess a source file
+example6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example6.dir/build.make CMakeFiles/example6.dir/example6.cpp.i
+.PHONY : example6.cpp.i
+
+example6.s: example6.cpp.s
+.PHONY : example6.s
+
+# target to generate assembly for a file
+example6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example6.dir/build.make CMakeFiles/example6.dir/example6.cpp.s
+.PHONY : example6.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -360,15 +508,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... StateEdit"
+	@echo "... debug"
+	@echo "... debug2"
 	@echo "... example1"
 	@echo "... example2"
 	@echo "... example3"
 	@echo "... example4"
+	@echo "... example5"
+	@echo "... example6"
 	@echo "... main"
 	@echo "... yyjson"
 	@echo "... StateEdit.obj"
 	@echo "... StateEdit.i"
 	@echo "... StateEdit.s"
+	@echo "... debug.obj"
+	@echo "... debug.i"
+	@echo "... debug.s"
+	@echo "... debug2.obj"
+	@echo "... debug2.i"
+	@echo "... debug2.s"
 	@echo "... example1.obj"
 	@echo "... example1.i"
 	@echo "... example1.s"
@@ -381,6 +539,12 @@ help:
 	@echo "... example4.obj"
 	@echo "... example4.i"
 	@echo "... example4.s"
+	@echo "... example5.obj"
+	@echo "... example5.i"
+	@echo "... example5.s"
+	@echo "... example6.obj"
+	@echo "... example6.i"
+	@echo "... example6.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

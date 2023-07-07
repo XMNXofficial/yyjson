@@ -86,3 +86,7 @@ int main()
     yyjson_mut_obj_add(temp_mut_root,yyjson_mut_str(temp_mut,"你好"),yyjson_mut_str(temp_mut,"世界"));
     cout<<yyjson_mut_write(temp_mut,0,0);
 ```
+
+## 获取对象的键名
+### `yyjson_mut_obj_iter_get_val(obj)`
+### `yyjson_mut_get_str(yyjson_mut_obj_iter_get_val(obj_1))`

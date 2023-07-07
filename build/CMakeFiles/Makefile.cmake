@@ -56,5 +56,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/example3.dir/DependInfo.cmake"
   "CMakeFiles/example4.dir/DependInfo.cmake"
   "CMakeFiles/StateEdit.dir/DependInfo.cmake"
+  "CMakeFiles/example5.dir/DependInfo.cmake"
+  "CMakeFiles/example6.dir/DependInfo.cmake"
+  "CMakeFiles/debug.dir/DependInfo.cmake"
+  "CMakeFiles/debug2.dir/DependInfo.cmake"
   "bin/CMakeFiles/yyjson.dir/DependInfo.cmake"
   )

@@ -35,6 +35,6 @@ int main()
         yyjson_mut_obj_add(temp, key_arr_StatEdit_obj_Member_str_key_Stat_key_MemberVal, key_arr_StatEdit_obj_Member_str_key_Stat_val_MemberVal);
     }
 
-    cout << yyjson_mut_write(doc, 0, 0);
+    cout << yyjson_mut_write(doc, YYJSON_WRITE_PRETTY, 0);
     return 0;
 }

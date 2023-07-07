@@ -36,6 +36,30 @@
   "output": "CMakeFiles/StateEdit.dir/StateEdit.cpp.obj"
 },
 {
+  "directory": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/build",
+  "command": "C:/Windows/w64devkit/bin/g++.exe  @CMakeFiles/example5.dir/includes_CXX.rsp -g -o CMakeFiles/example5.dir/example5.cpp.obj -c C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/example5.cpp",
+  "file": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/example5.cpp",
+  "output": "CMakeFiles/example5.dir/example5.cpp.obj"
+},
+{
+  "directory": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/build",
+  "command": "C:/Windows/w64devkit/bin/g++.exe  @CMakeFiles/example6.dir/includes_CXX.rsp -g -o CMakeFiles/example6.dir/example6.cpp.obj -c C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/example6.cpp",
+  "file": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/example6.cpp",
+  "output": "CMakeFiles/example6.dir/example6.cpp.obj"
+},
+{
+  "directory": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/build",
+  "command": "C:/Windows/w64devkit/bin/g++.exe  @CMakeFiles/debug.dir/includes_CXX.rsp -g -o CMakeFiles/debug.dir/debug.cpp.obj -c C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/debug.cpp",
+  "file": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/debug.cpp",
+  "output": "CMakeFiles/debug.dir/debug.cpp.obj"
+},
+{
+  "directory": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/build",
+  "command": "C:/Windows/w64devkit/bin/g++.exe  @CMakeFiles/debug2.dir/includes_CXX.rsp -g -o CMakeFiles/debug2.dir/debug2.cpp.obj -c C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/debug2.cpp",
+  "file": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/debug2.cpp",
+  "output": "CMakeFiles/debug2.dir/debug2.cpp.obj"
+},
+{
   "directory": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/build/bin",
   "command": "C:/Windows/w64devkit/bin/gcc.exe   -g -o CMakeFiles/yyjson.dir/yyjson.c.obj -c C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/src/yyjson.c",
   "file": "C:/Users/mchao/Desktop/QQdemo/testILIB/yyjson/src/yyjson.c",
